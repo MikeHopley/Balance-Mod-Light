@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+	<title>FTL Balance Mod Light</title>
+</head>
+<body>
+
+<h1>FTL Balance Mod <span class="light-heading">Light</span></h1>
+
+<p><a href="http://www.it-is-law.com/ftl-balance/index.php?title=Main_Page">Twinge’s Balance Mod</a> is a great mod for FTL. Twinge says its goal is “to improve the overall game experience by fixing balance issues throughout the game and by adding more interesting decisions”.</p>
+
+<p>Balance Mod Light is my custom version of Twinge’s Balance Mod. It reverts some changes for an experience that is closer to vanilla. I’ve erred towards making the game harder rather than easier.</p>
+
+
+<h2 id="install">Installation</h2>
+
+<p class="download">Download: <a href="#">Balance Mod Light 1.0</a></p>
+
+<p>This is not a standalone mod. In <a href="https://subsetgames.com/forum/viewtopic.php?t=17102">Slipstream Mod Manager</a>, you need both mods enabled, and Balance Mod Light must be loaded <strong>after</strong> Twinge’s Balance Mod.</p>
+
+<p>The current version was tested with Balance Mod 3.6, but should work fine with other versions too.</p>
+
+<h2 id="motive">Motivation</h2>
+
+<h3>Why Balance Mod?</h3>
+
+<p>What I want from Balance Mod is a more enjoyable, varied, and nuanced version of FTL. I want vanilla FTL, just better.</p>
+
+<p>Balance Mod does a great job of making trash items more usable, often just by reducing their cost; importantly, this also reduces sale value.</p>
+
+<p>Increased Flak 1 and Halberd rarity means they carry fewer runs. Increased hacking costs and removal of <a href="https://www.youtube.com/watch?v=vKZXUAaZSCQ&t=37s">the bypass</a> make hacking a less complete “win button”.</p>
+
+<p>Balance Mod also applies polish, care, and craftsmanship. I appreciate the small details.</p>
+
+
+<h3>Why Balance Mod <em>Light</em>?</h3>
+
+<p>What I <strong>don’t</strong> want from Balance Mod are changes designed to make the game less harsh or reduce the effect of <abbr title="Random Number Generation">RNG</abbr>. When I’m doing a win streak, I want to feel sure I’ve earned it.</p>
+
+<p>This mod was prompted by some changes in Balance Mod 3.6. When an endgame Auto-scout runs out of ammo after firing twin Letos three times, I feel there has been too much meddling.</p>
+
+
+<h2 id="bugs">Bug fixes and graphical changes</h2>
+
+<p>Balance Mod already incorporates my Heavy Ion Stunner graphic, and my graphical fixes for the Hull Beam and Beam Drone 2.</p>
+
+<p>I fixed a graphical glitch with the reactor bar, when using Zoltan C.</p>
+
+<p>I fixed the <a href="https://ftl.fandom.com/wiki/Rebel_Unarmed_Defector">Rebel Defector event</a>, so you can never tell whether it’s a trap.</p>
+
+
+<h2 id="changes">Changes from Balance Mod</h2>
+
+<p>Unless otherwise noted, every change is a reversion to vanilla behaviour.</p>
+
+<p class="status explain-yes">
+	Explanations are visible, for more context.
+	<button class="toggle">Hide explanations</button>
+</p>
+
+<p class="status hidden explain-no">
+	Explanations are hidden, for a clearer overview.
+	<button class="toggle hidden">Show explanations</button>
+</p>
+
+<script>
+	(function(){
+		document.querySelectorAll('.toggle').forEach(function(item) {
+			item.onclick = function() {
+				document.querySelectorAll('.toggle, .status, .rationale').forEach(function(item) {
+					item.classList.toggle('hidden')
+				})
+			}
+		});
+	})();
+</script>
+
+
+<h3>Sector 1</h3>
+
+<p>Auto-assaults can appear in sector 1.</p>
+<p class="rationale">It seems overkill to exclude an entire class of ships, just to help Stealth B and C.</p>
+
+<p>The <a href="https://ftl.fandom.com/wiki/Rebel_AI_Scout_carrying_Shield_Virus">Rebel Shield Hack event</a> is the same as vanilla:</p>
+<ul>
+	<li>It can appear in sector 1.</li>
+	<li>It cannot appear in Rebel sectors.</li>
+	<li>Instead of hacking one bar, it halves the shield level.</li>
+</ul>
+<p class="rationale">Yes, the event is utter RNG trash. But that’s part of variety and I like having a scare from time to time. Rebel Sectors on the other hand don’t need a nerf.</p>
+
+
+<h3>Weapons</h3>
+
+<p>Heavy Ion Stunner charge time returned to 13 (from 12).</p>
+<p class="rationale">It can’t self-stack without a Reloader, for an authentic Engi B experience. Enemy Heavy Ion + Halberd is a much more precise dodge.</p>
+
+<p>Heavy Ion Stunner stun increased to 10 seconds (from 7, vanilla is 3).</p>
+<p class="rationale">The stun gives it more personality and clever uses. Stun is underused, and giving a strong stun to an otherwise weak weapon is interesting.</p>
+
+<p>Halberd Beam charge time returned to 17 seconds (from 18).</p>
+<p class="rationale">3 power is enough to separate Halberd from Pike and Hull. Slower Halberds mostly harm enemies, not the player.</p>
+
+<p>Burst Laser 3 charge time returned to 19 seconds (from 18).</p>
+<p class="rationale">Honestly, I just think it’s cool that you can cloak two unmanned volleys in a row. I’m only using this weapon when desperate anyway (or with a pre-igniter), so -1 second charge is not going to change decisions.</p>
+
+<p>Hull Laser 2 speed returned to 90 (from 75).</p>
+<p class="rationale">I can time my weapons, it’s not that hard. The faster speed gives this weapon just a touch more personality.</p>
+
+<p>Flak 1 radius returned to 42 (from 49).</p>
+<p class="rationale">Inaccurate flak harms enemies more than the player; flak and Swarm are the only enemy weapons that can land multiple shots in the same room. Reduced Flak 1 accuracy makes Flak 2 (55 radius) less distinct.</p>
+
+<p>Adv. Flak radius returned to 40 (from 45), and charge time to 8 (from 9).</p>
+<p class="rationale">The changes are ineffective at nerfing Lanius B, and it’s fun to have the weapon be more distinct.</p>
+
+
+<h3>Augments</h3>
+
+<p>Adv. FTL Navigation reinstated. It costs 20 instead of 50 (vanilla).</p>
+<p class="rationale">It has occasional use for diving and a fun blue option. Make it cheap so at least you might keep a free one.</p>
+
+<p>Hacking Stun reinstated. It costs 20 instead of 60 (vanilla).</p>
+<p class="rationale">Although rarely useful, it’s fun sometimes. Make it cheap so at least you might keep a free one.</p>
+
+<p>Long-Ranged Scanners cost 40 (50 in Balance Mod, 30 in vanilla).</p>
+<p class="rationale">At 30 scrap it’s great value, although not quite the auto-buy people think. At 50 scrap I almost never buy it. 40 scrap means I will buy it sometimes. Note that LRS blue options are slightly weaker in Balance Mod.</p>
+
+
+<h3>Player ships</h3>
+
+<p>Federation C has Emergency Respirators, not Zoltan Shield Bypass.</p>
+<p class="rationale">Zoltan Shield Bypass is a rather large change to early matchups for this ship. It’s also the only ship where the starting Respirators are actually useful.</p>
+
+<p>Stealth B cloaking room is below sensors.</p>
+<p class="rationale">Moving the cloaking room above sensors was a pure anti-RNG change, specifically for Mini Beam and Beam Drone 2. It made the combination of repairs, <50% venting, sensor dashes, and power-stealing awkward; and also made it harder to judge whether enemy drones were targeting a critical room.</p>
+
+
+<h3>Enemy ships</h3>
+
+<p>[TO DO] Enemy ship missile stocks returned to vanilla amounts.</p>
+<p class="rationale">Reducing the stock of missiles on several ships from 10 to 6 is a significant anti-RNG change.</p>
+
+<p>[TO DO] Enemy ship names restored.</p>
+<p class="rationale">The name changes were a consequence of the missile stock changes. Changing “Energy” to “Zoltan” is good though, so I kept that.</p>
+
+<p>[TO DO] Enemy crew counts returned to vanilla amounts.</p>
+<p class="rationale">Having some later-game enemies with lower crew provides variety. Equally, enemies with huge crews (I’m looking at you, Slugs) provide variety.</p>
+
+<p>[TO DO] Lanius Bomber system strength returned to vanilla values.</p>
+<p class="rationale">Lanius Bombers are scary. I like that.</p>
+
+<p>[TO DO, and check BM change] Rock ships’ maximum cloaking returned to level 3.</p>
+<p class="rationale">Long cloaks and missiles are rough, but that’s part of the game.</p>
+
+<p>[TO DO] Zoltan Fighters (and similar?) hull returned to 7 (from 6)</p>
+<p class="rationale">This change seemed unnecessary. It could cause Stealth B rather silly problems, as this enemy can run at 4 hull.</p>
+
+<p>[TO DO] Shieldless Auto-scouts can occur at any point in the game.</p>
+<p class="rationale">While it’s reasonable to make late-game enemies slightly harder, I think it’s more fun to keep the variety. Honestly, who doesn’t enjoy shieldless Auto-scouts with bonkers weapons, max cloaking, and 45% evasion?</p>
+
+<p>[TO DO, Check which ships] Slug and Rebel ships can occasionally have 5 shields.</p>
+<p class="rationale">Maintain variety. This didn’t need fixing, because they are so rare anyway.</p>
+
+<p>[TO DO] Possibly revert the max-sector restrictions on various ships.</p>
+<p class="rationale">Maintain variety.</p>
+
+
+<div class="image-container">
+	<img class="end-pic" src="fleet_big.png" width="334" height="132">
+</div>
+
+</body>
+</html>
