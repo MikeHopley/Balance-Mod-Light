@@ -1,0 +1,136 @@
+body {
+	background: white;
+	color: black;
+	font-family: Lato, sans-serif;
+	font-size: 120%;
+	max-width: 33em;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+h1, h2, h3 {
+	margin: 1.5em 0 0.5em 0;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+
+p+p {
+	margin-top: 1em;
+}
+
+.rationale, .status, .light-heading {
+	margin-top: 0.25em;
+	color: #333;
+	background: #ffd;
+	border-top: 2px solid #dda;
+	border-bottom: 2px solid #dda;
+	padding: 0.5em 2em;
+	max-width: 35em;
+}
+
+.rationale, .status {
+	font-size: 80%;
+}
+
+.status {
+	padding: 1em 0;
+	max-width: 37em;
+}
+
+.light-heading {
+	margin-top: 0.25em;
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	position: relative;
+}
+.light-heading::before {
+	content: url('engi_group.png');
+	position: absolute;
+	top: calc(-0.5em - 17px);
+	right: 0;
+}
+.light-heading::after {
+	content: url('mantis_group_vibrant.png');
+	position: absolute;
+	bottom: calc(-0.5em - 7px);
+	left: 0;
+}
+
+h2 {
+	position: relative;
+}
+#install::before {
+	content: url('repair.png');
+	position: absolute;
+	left: -30px;
+	top: 2px;
+}
+#bugs::before {
+	content: url('mantis_vibrant.png');
+	position: absolute;
+	left: -30px;
+}
+#motive::before {
+	content: url('slug.png');
+	position: absolute;
+	left: -30px;
+}
+#changes::before {
+	content: url('artemis.png');
+	position: absolute;
+	left: -30px;
+}
+
+ul {
+	margin: 0;
+	padding: 0 0 0 2em;
+}
+
+abbr {
+	border-bottom: 1px dotted #000;
+	text-decoration: none;
+}
+
+button {
+	margin: 0 0 0 1em;
+	padding: 0.5em 1em;
+	color: white;
+	background: #25a;
+	border: 2px solid #48f;
+	border: 0;
+	font-size: 1rem;
+	cursor: pointer;
+}
+.explain-yes, .explain-no {
+	position: relative;
+	padding-left: max(2em, 30px);
+}
+.explain-yes::before, .explain-no::before {
+	position: absolute;
+	top: calc(50% - 27px);
+	left: -26px;
+	content: url('zoltan_explode.png');
+}
+.explain-yes::before {
+	content: url('zoltan.png');
+}
+
+.hidden {
+	display: none;
+}
+.image-container {
+	font-size: 80%;
+	max-width: 39em;
+}
+.end-pic {
+	display: block;
+	margin: 2em auto 1em auto;
+}
