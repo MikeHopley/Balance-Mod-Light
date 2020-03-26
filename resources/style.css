@@ -107,6 +107,10 @@ abbr {
 	border-bottom: 1px dotted #000;
 	text-decoration: none;
 }
+code {
+	color: crimson;
+	font-family: Consolas, Courier, monospace;
+}
 
 button {
 	margin: 0 0 0 1em;
