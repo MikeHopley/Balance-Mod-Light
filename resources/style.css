@@ -61,13 +61,13 @@ p+p {
 	position: relative;
 }
 .light-heading::before {
-	content: url('engi_group.png');
+	content: url('./engi_group.png');
 	position: absolute;
 	top: calc(-0.5em - 17px);
 	right: 0;
 }
 .light-heading::after {
-	content: url('mantis_group_vibrant.png');
+	content: url('./mantis_group_vibrant.png');
 	position: absolute;
 	bottom: calc(-0.5em - 7px);
 	left: 0;
@@ -77,23 +77,23 @@ h2 {
 	position: relative;
 }
 #install::before {
-	content: url('repair.png');
+	content: url('./repair.png');
 	position: absolute;
 	left: -30px;
 	top: 1px;
 }
 #bugs::before {
-	content: url('mantis_vibrant.png');
+	content: url('./mantis_vibrant.png');
 	position: absolute;
 	left: -30px;
 }
 #motive::before {
-	content: url('slug.png');
+	content: url('./slug.png');
 	position: absolute;
 	left: -30px;
 }
 #changes::before {
-	content: url('artemis.png');
+	content: url('./artemis.png');
 	position: absolute;
 	left: -30px;
 }
@@ -126,10 +126,10 @@ button {
 	position: absolute;
 	top: calc(50% - 27px);
 	left: -26px;
-	content: url('zoltan_explode.png');
+	content: url('./zoltan_explode.png');
 }
 .explain-yes::before {
-	content: url('zoltan.png');
+	content: url('./zoltan.png');
 }
 
 .hidden {
