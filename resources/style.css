@@ -97,6 +97,15 @@ h2 {
 	position: absolute;
 	left: -30px;
 }
+p {
+	position: relative;
+}
+.hax::before {
+	content: url('./hax.png');
+	position: absolute;
+	left: -37px;
+	top: 1px;
+}
 
 ul {
 	margin: 0;
@@ -125,6 +134,7 @@ button {
 .explain-yes, .explain-no {
 	position: relative;
 	padding-left: max(2em, 30px);
+	margin-top: 1.5em;
 }
 .explain-yes::before, .explain-no::before {
 	position: absolute;
@@ -149,12 +159,12 @@ button {
 }
 
 @media (max-width: 35em) {
-	*::before, *::after {
-		content: '' !important;
-	}
 	.light-heading {
 		background: inherit;
 		border: none;
 		padding: 0;
+	}
+	.light-heading::before, .light-heading::after {
+		content: '';
 	}
 }
