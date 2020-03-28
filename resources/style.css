@@ -35,6 +35,12 @@ p+p {
 	margin-top: 1em;
 }
 
+.todo {
+	color: crimson;
+	font-weight: bold;
+}
+
+
 .rationale, .status, .light-heading {
 	margin-top: 0.25em;
 	color: #333;
