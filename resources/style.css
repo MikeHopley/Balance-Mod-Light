@@ -1,7 +1,7 @@
 body {
 	background: white;
 	color: black;
-	font-family: Lato, sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 120%;
 	max-width: 33em;
 	margin: 0 auto;
@@ -18,7 +18,7 @@ h1 {
 }
 
 .subtitle {
-	color: #333;
+	color: #666;
 	font-size: 0.8rem;
 	margin: 0;
 	position: absolute;
